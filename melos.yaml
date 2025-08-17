@@ -1,0 +1,26 @@
+name: riverpod_estudos
+
+packages:
+  - "."
+  - "lib/features/*"
+
+scripts:
+  clean:
+    description: "Clean the project"
+    run: melos exec -c 1 -- "flutter clean"
+
+  fix-format:
+    description: "Fix the format of the project"
+    run: melos exec -c 1 -- "dart fix --apply && dart format ."
+
+  get:
+    description: "Get the dependencies"
+    run: melos exec -c 1 -- "flutter pub get"
+
+  upgrade:
+    description: "Update the dependencies"
+    run: melos exec -c 1 -- "flutter pub upgrade"
+
+  generate:
+    description: "Generate the files"
+    run: melos exec -c 1 -- "dart pub run build_runner build --delete-conflicting-outputs"
