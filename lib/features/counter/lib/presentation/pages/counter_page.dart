@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../widgets/widgets.dart';
 
 class CounterPage extends ConsumerWidget {
+  static const routeName = '/CounterPage';
   const CounterPage({super.key});
 
   @override

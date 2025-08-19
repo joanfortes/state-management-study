@@ -17,10 +17,12 @@ class CounterControls extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             FloatingActionButton(
+              heroTag: 'counter-fab-increment',
               onPressed: () => counterNotifier.increment(),
               child: const Icon(Icons.add),
             ),
             FloatingActionButton(
+              heroTag: 'counter-fab-decrement',
               child: const Icon(Icons.remove),
               onPressed: () => counterNotifier.decrement(),
             )

@@ -16,6 +16,8 @@ dependencies:
   riverpod_annotation: ^2.6.1
   counter:
     path: lib/features/counter
+  streams_counter:
+    path: lib/features/streams_counter
   melos: ^6.3.2
 
 dev_dependencies:
